@@ -5,14 +5,16 @@
     }
 
     .navbar .bottom-nav .brand-name img{
-        width: 190px !important;
+        width: 100px !important;
+        height: 60px;
+        padding: 4px 0px;
     }
 
     .navbar .navbar-nav{
         width: 100%;
         height: 100vh;
         position: absolute;
-        top: 219px;
+        top: 144px;
         right: -100%;
         background-color: #fff;
         z-index: 99999;
@@ -90,6 +92,51 @@
 
             a{
                 font-size: 13px !important;
+            }
+        }
+    }
+
+    .category {
+        padding: 30px 0px;
+        .owl-category .item .box img{
+            width: 50px;
+            height: 50px;
+        }
+
+        .box h4{
+            font-size: 13px !important;
+        }
+    }
+
+    .product-box {
+
+        .image-content{
+            height: 140px !important;
+
+            .fav-btn{
+                width: 30px;
+                height: 30px;
+
+                i{
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .content{
+            h4{
+                font-size: 11px !important;
+            }
+
+            p{
+                margin: 10px 0px;
+                font-size: 12px;
+            }
+
+            .add-to-cart{
+                padding: 0px 10px;
+                width: fit-content;
+                font-size: 15px !important;
             }
         }
     }

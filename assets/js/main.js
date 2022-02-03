@@ -83,10 +83,10 @@ $(document).ready(function () {
         autoplayHoverPause: true,
         responsive:{
             0:{
-                items:2
+                items:3
             },
             600:{
-                items:2
+                items:3
             },
             1000:{
                 items:5
@@ -114,10 +114,10 @@ $(document).ready(function () {
         autoplayHoverPause: true,
         responsive:{
             0:{
-                items:1
+                items:2
             },
             600:{
-                items:1
+                items:2
             },
             1000:{
                 items:4
