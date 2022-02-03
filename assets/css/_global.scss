@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "ExpoArabic";
+    src: url(../fonts/ExpoArabic/ExpoArabic-Medium.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "ExpoArabic";
+    src: url(../fonts/ExpoArabic/ExpoArabic-Book.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "ExpoArabic";
+    src: url(../fonts/ExpoArabic/ExpoArabic-SemiBold.ttf);
+    font-weight: 900;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "ExpoArabic" , sans-serif ;
+    scroll-behavior: smooth;
+
+    &::selection{
+        background-color: #F2DA1A;
+        color: #fff; 
+    }
+    
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #ccc;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: #F2DA1A; 
+        border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #F2DA1A; 
+    }
+}
+
+.overflowNone{
+    overflow: hidden;
+}
+
+.btn:focus,
+button:focus,
+input:focus,
+.form-control:focus {
+    outline-width: 0px !important;
+    outline-color: transparent !important;
+    box-shadow: 0 0 0 0 rgba($color: #000000, $alpha: 0);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #ddd;
+    opacity: 1;
+    transition: all .5s linear;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span{
+    width: 15px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #F2DA1A;
+    opacity: 1;
+}
+
+.overflowNone{
+    overflow: hidden;
+}
