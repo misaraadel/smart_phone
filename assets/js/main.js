@@ -1,9 +1,4 @@
 $(document).ready(function () {
-    window.addEventListener("load", function () {
-        const loader = document.querySelector(".loader");
-        loader.className += " hidden";
-    });
-
     $(window).scroll(function () {
         if ($(this).scrollTop() > 700) {
             $(".scroll-top-button").fadeIn();
@@ -42,29 +37,32 @@ $(document).ready(function () {
         $('body').toggleClass('overflowNone')
     });
 
-    $("#slider-range").slider({
-        range:true,
-        rtl: true,
-        orientation:"horizontal",
-        min: 0,
-        max: 10000,
-        values: [0, 10000],
-        step: 100,
-        slide:function (event, ui) {
-            if (ui.values[0] == ui.values[1]) {
-            return false;
-            }     
-            $("#min_price").val(ui.values[0]);
-            $("#max_price").val(ui.values[1]);
-
-        }
-    });
-
     $('.owl-header').owlCarousel({
         rtl: true,
         loop:true,
         margin: 20,
         nav:false,
+        dots: true,
+        autoplay: false,
+        touchDrag  :true,
+		mouseDrag  : true,
+		autoWidth: false,
+		animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        autoplayTimeout: 2000,
+		smartSpeed: 2000,
+		dragEndSpeed: 2000,
+		slidSpeed: 900,
+        paginationSpeed: 900,
+        autoplayHoverPause: true,
+        items:1
+    });
+
+    $('.owl-single-product').owlCarousel({
+        rtl: true,
+        loop:true,
+        margin: 20,
+        nav:true,
         dots: true,
         autoplay: false,
         touchDrag  :true,

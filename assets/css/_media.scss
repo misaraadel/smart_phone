@@ -124,7 +124,7 @@
         }
 
         .content{
-            h4{
+            .head , h4{
                 font-size: 11px !important;
             }
 
@@ -139,5 +139,17 @@
                 font-size: 15px !important;
             }
         }
+    }
+
+    .sing-in .sing-in-contain{
+        padding: 20px 10px !important;
+    }
+
+    .cart .heading{
+        margin-top: 25px !important;
+    }
+
+    .general-section{
+        padding: 50px 0px !important;
     }
 }

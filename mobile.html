@@ -45,7 +45,7 @@
                         <div class="col-lg-6 col-12">
                             <ul class="socail-data">
                                 <li>
-                                    <a href="#">
+                                    <a href="map.html">
                                         <i class="fas fa-map-marked-alt"></i>
 
                                         <span>
@@ -94,7 +94,7 @@
                         <span class="line"></span>
                     </div>
 
-                    <a href="#" class="brand-name">
+                    <a href="index.html" class="brand-name">
                         <img src="assets/images/logo.png" alt="" />
                     </a>
 
@@ -143,7 +143,7 @@
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="cart.html">
                                 <i class="fas fa-shopping-bag"></i>
 
                                 <span class="number">
@@ -166,7 +166,7 @@
 
                         <ul class="breadcrumb-list">
                             <li>
-                                <a href="#">
+                                <a href="index.html">
                                     الرئيسية
                                 </a>
                             </li>
@@ -355,9 +355,9 @@
                                         </div>
         
                                         <div class="content">
-                                            <h4>
-                                                Affluent Leather Card Holder
-                                            </h4>
+                                            <a href="single_product.html" class="head">
+                                        Affluent Leather Card Holder
+                                    </a>
         
                                             <p>
                                                 120 ر.س 
@@ -381,9 +381,9 @@
                                         </div>
         
                                         <div class="content">
-                                            <h4>
-                                                Affluent Leather Card Holder
-                                            </h4>
+                                            <a href="single_product.html" class="head">
+                                        Affluent Leather Card Holder
+                                    </a>
         
                                             <p>
                                                 120 ر.س 
@@ -407,9 +407,9 @@
                                         </div>
         
                                         <div class="content">
-                                            <h4>
-                                                Affluent Leather Card Holder
-                                            </h4>
+                                            <a href="single_product.html" class="head">
+                                        Affluent Leather Card Holder
+                                    </a>
         
                                             <p>
                                                 120 ر.س 
@@ -433,9 +433,9 @@
                                         </div>
         
                                         <div class="content">
-                                            <h4>
-                                                Affluent Leather Card Holder
-                                            </h4>
+                                            <a href="single_product.html" class="head">
+                                        Affluent Leather Card Holder
+                                    </a>
         
                                             <p>
                                                 120 ر.س 
@@ -459,9 +459,9 @@
                                         </div>
         
                                         <div class="content">
-                                            <h4>
+                                            <a href="single_product.html" class="head">
                                                 Affluent Leather Card Holder
-                                            </h4>
+                                            </a>
         
                                             <p>
                                                 120 ر.س 
@@ -485,9 +485,9 @@
                                         </div>
         
                                         <div class="content">
-                                            <h4>
+                                            <a href="single_product.html" class="head">
                                                 Affluent Leather Card Holder
-                                            </h4>
+                                            </a>
         
                                             <p>
                                                 120 ر.س 
@@ -511,9 +511,9 @@
                                         </div>
         
                                         <div class="content">
-                                            <h4>
+                                            <a href="single_product.html" class="head">
                                                 Affluent Leather Card Holder
-                                            </h4>
+                                            </a>
         
                                             <p>
                                                 120 ر.س 
@@ -537,9 +537,9 @@
                                         </div>
         
                                         <div class="content">
-                                            <h4>
+                                            <a href="single_product.html" class="head">
                                                 Affluent Leather Card Holder
-                                            </h4>
+                                            </a>
         
                                             <p>
                                                 120 ر.س 
@@ -563,9 +563,9 @@
                                         </div>
         
                                         <div class="content">
-                                            <h4>
+                                            <a href="single_product.html" class="head">
                                                 Affluent Leather Card Holder
-                                            </h4>
+                                            </a>
         
                                             <p>
                                                 120 ر.س 
@@ -593,25 +593,25 @@
 
                            <ul class="links">
                                 <li>
-                                    <a href="#">
+                                    <a href="about_us.html">
                                         من نحن 
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#">
+                                    <a href="questions.html">
                                         الاسئلة الشائعة
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#">
+                                    <a href="privacy.html">
                                         سياسة الخصوصية
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#">
+                                    <a href="terms_and_conditions.html">
                                         سياسة الاستبدال والاسترجاع
                                     </a>
                                 </li>
@@ -662,5 +662,27 @@
         <script src="assets/js/lib/wow.min.js"></script>
         <script src="assets/js/lib/price_range_script.js"></script>
         <script src="assets/js/main.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $("#slider-range").slider({
+                    range:true,
+                    rtl: true,
+                    orientation:"horizontal",
+                    min: 0,
+                    max: 10000,
+                    values: [0, 10000],
+                    step: 100,
+                    slide:function (event, ui) {
+                        if (ui.values[0] == ui.values[1]) {
+                        return false;
+                        }     
+                        $("#min_price").val(ui.values[0]);
+                        $("#max_price").val(ui.values[1]);
+
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
