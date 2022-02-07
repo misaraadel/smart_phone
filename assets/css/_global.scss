@@ -23,7 +23,7 @@
     scroll-behavior: smooth;
 
     &::selection{
-        background-color: #F2DA1A;
+        background-color: #EF4036;
         color: #fff; 
     }
     
@@ -36,12 +36,12 @@
     }
     
     &::-webkit-scrollbar-thumb {
-        background: #F2DA1A; 
+        background: #EF4036; 
         border-radius: 8px;
     }
 
     &::-webkit-scrollbar-thumb:hover {
-        background: #F2DA1A; 
+        background: #EF4036; 
     }
 }
 
@@ -82,7 +82,7 @@ ul{
     width: 15px;
     height: 5px;
     border-radius: 5px;
-    background-color: #F2DA1A;
+    background-color: #EF4036;
     opacity: 1;
 }
 
