@@ -1440,77 +1440,21 @@ html[dir="rtl"] .inputs-wrapper .price-range-field {
 
 header {
   width: 100%;
-  padding: 100px 0px 0px;
-  background: url("../images/header.jpg") center/cover no-repeat;
 }
 
-header .content {
+header img {
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-header .content h4 {
-  color: #283891;
-  font-size: 25px;
-  font-weight: 900;
-  margin: 0px;
-}
-
-header .content p {
-  color: #222;
-  margin: 20px 0px;
-  font-size: 15px;
-}
-
-header .content .btn-shape {
-  width: 150px;
-  height: 40px;
-  background-color: #283891;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-header .image-content {
-  width: 100%;
-  height: 500px;
-}
-
-header .image-content img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: bottom left;
-     object-position: bottom left;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 header .owl-theme .owl-nav.disabled + .owl-dots {
   position: absolute;
   bottom: 10px;
-  right: 0px !important;
+  right: 50% !important;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .heading {
@@ -1629,11 +1573,6 @@ header .owl-theme .owl-nav.disabled + .owl-dots {
 
 .category .box {
   width: 100%;
-  padding: 20px 0px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 0px 10px rgba(40, 56, 145, 0.1);
-          box-shadow: 0px 0px 10px rgba(40, 56, 145, 0.1);
-  border-radius: 20px;
   -webkit-transition: all .4s linear;
   transition: all .4s linear;
   display: -webkit-box;
@@ -1654,12 +1593,13 @@ header .owl-theme .owl-nav.disabled + .owl-dots {
 }
 
 .category .box img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-filter: invert(22%) sepia(10%) saturate(2450%) hue-rotate(134deg) brightness(93%) contrast(81%);
-          filter: invert(22%) sepia(10%) saturate(2450%) hue-rotate(134deg) brightness(93%) contrast(81%);
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px rgba(40, 56, 145, 0.1);
+          box-shadow: 0px 0px 10px rgba(40, 56, 145, 0.1);
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: auto;
 }
 
@@ -3549,16 +3489,6 @@ footer .copyrights p {
   .navbar .top-nav p {
     text-align: center;
   }
-  header {
-    padding: 50px 0px 0px;
-  }
-  header .image-content {
-    height: 200px;
-  }
-  header .image-content img {
-    -o-object-position: bottom center;
-       object-position: bottom center;
-  }
   .features .box h4 {
     font-size: 14px !important;
   }
@@ -3575,10 +3505,6 @@ footer .copyrights p {
   }
   .category {
     padding: 30px 0px;
-  }
-  .category .owl-category .item .box img {
-    width: 50px;
-    height: 50px;
   }
   .category .box h4 {
     font-size: 13px !important;
@@ -3621,6 +3547,12 @@ footer .copyrights p {
   }
   .new-banners .image-content.big-img {
     height: 300px !important;
+  }
+  header img {
+    height: 86px !important;
+  }
+  header .owl-theme .owl-nav.disabled + .owl-dots {
+    bottom: -8px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -176,60 +176,18 @@ html[dir="rtl"]{
 
 header{
     width: 100%;
-    padding: 100px 0px 0px;
-    background: url('../images/header.jpg') center / cover no-repeat;
 
-    .content{
+    img {
         width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-
-        h4{
-            color: #283891;
-            font-size: 25px;
-            font-weight: 900;
-            margin: 0px;
-        }
-
-        p{
-            color: #222;
-            margin: 20px 0px;
-            font-size: 15px;
-        }
-
-        .btn-shape{
-            width: 150px;
-            height: 40px;
-            background-color: #283891;
-            color: #fff;
-            font-size: 20px;
-            font-weight: 700;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-        }
-    }
-
-    .image-content{
-        width: 100%;
-        height: 500px;
-        
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            object-position: bottom left;
-        }
+        height: 400px;
+        object-fit: cover;
     }
 
     .owl-theme .owl-nav.disabled + .owl-dots{
         position: absolute;
         bottom: 10px;
-        right: 0px !important;
+        right: 50% !important;
+        transform: translateX(-50%);
     }
 }
 
@@ -339,10 +297,6 @@ header{
 
     .box{
         width: 100%;
-        padding: 20px 0px;
-        background-color: #fff;
-        box-shadow: 0px 0px 10px rgba($color: #283891 , $alpha: .1);
-        border-radius: 20px;
         transition: all .4s linear;
         display: flex;
         flex-direction: column;
@@ -350,10 +304,11 @@ header{
         align-items: center;
         align-content: center;
         img{
-            width: 100px;
-            height: 100px;
-            object-fit: contain;
-            filter: invert(22%) sepia(10%) saturate(2450%) hue-rotate(134deg) brightness(93%) contrast(81%);
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba($color: #283891 , $alpha: .1);
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
             margin: auto;
         }
 
