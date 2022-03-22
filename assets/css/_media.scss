@@ -152,4 +152,13 @@
     .general-section{
         padding: 50px 0px !important;
     }
+
+    .new-banners .image-content {
+        height: 126px;
+
+        &.big-img {
+            height: 300px !important;
+        }
+    }
+
 }

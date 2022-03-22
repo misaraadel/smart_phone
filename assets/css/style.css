@@ -3350,7 +3350,8 @@ footer .links li a:hover {
   color: #255B9B;
 }
 
-footer .socail {
+footer .visa-img {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3363,6 +3364,43 @@ footer .socail {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
+}
+
+footer .visa-img li {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+footer .visa-img li:last-child {
+  -webkit-margin-end: 0px !important;
+          margin-inline-end: 0px !important;
+}
+
+footer .visa-img li img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+footer .visa-img li:last-child img {
+  width: 50px;
+  height: 20px;
+}
+
+footer .socail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
 }
 
 footer .socail li {
@@ -3419,6 +3457,28 @@ footer .copyrights p {
   font-size: 15px;
   font-weight: 500;
   margin: 0px;
+}
+
+.new-banners {
+  width: 100%;
+  padding: 30px 0px;
+}
+
+.new-banners .image-content {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+
+.new-banners .image-content.big-img {
+  height: 480px !important;
+}
+
+.new-banners .image-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media (max-width: 999px) {
@@ -3555,6 +3615,12 @@ footer .copyrights p {
   }
   .general-section {
     padding: 50px 0px !important;
+  }
+  .new-banners .image-content {
+    height: 126px;
+  }
+  .new-banners .image-content.big-img {
+    height: 300px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
